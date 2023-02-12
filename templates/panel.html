@@ -1,0 +1,38 @@
+{%extends 'base.html'%}
+
+{%block title%}
+login page
+{%endblock title%}
+
+{%block style%}
+.add{
+        background-color: black;
+        font-size:25px;
+        color:white;
+        text-align: center;
+        text-decoration:none;
+        padding: 5px ;
+        border-radius:10px;
+      }
+
+.panel{
+ text-align: center;
+border:black solid 5px;
+margin:25px;
+padding:60px;
+}
+{%endblock style%}
+
+{%block content%}
+<div class="panel">
+    <h3>hello {{user}}</h3>
+    <br><br>
+    <img style="width: 25%; height: 30%;border: solid black;border-radius: 50px;" src={{profile}}{{user}}.jpg alt="we can not load this picture">
+    <br><br><br>
+    <a class="add" href="/add"> add a flight </a>
+    <br><br>
+    <a class="add" href="/delete"> delete a flight </a>
+
+</div>
+
+{%endblock content%}

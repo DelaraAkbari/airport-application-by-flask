@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete page</title>
+    <style>
+        .delete{
+    margin-top: 100px;
+    font-size: 25px;
+    text-align: center;
+    border: black dotted 10px;
+    padding: 20px;
+    margin:30px;
+}
+        .sub{
+        background-color: black;
+        font-size: 20px;
+        color:white;
+        margin: auto;
+        padding: 5px ;
+        text-align: center;
+    border-radius: 20px;
+      }
+    </style>
+</head>
+<body>
+<div class="delete">
+<form action="/delete" method="POST">
+    <p>flight number: <input type="number" name="flight_num"> </p>
+    <input class="sub" type="submit" value="delete">
+
+</form>
+</div>
+
+</body>
+</html>

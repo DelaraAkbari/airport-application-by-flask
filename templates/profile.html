@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+
+{%block title%}
+profile
+{%endblock title%}
+
+{%block style%}
+
+.up{
+        background-color: black;
+        font-size: 20px;
+        color:white;
+        text-align: center;
+        text-decoration:none;
+        padding: 5px ;
+        border-radius:10px;
+      }
+
+.profile{
+ text-align: center;
+border:black solid 5px;
+margin:25px;
+padding:60px;
+}
+
+input{
+ border:solid black 3px;
+ text-align: center;
+
+}
+
+{%endblock style%}
+
+{%block content%}
+<div class="profile">
+<h3>hello {{user}}</h3>
+<form method="POST" enctype="multipart/form-data">
+    <input type="text" name="new_username" placeholder="new username">
+    <input type="submit" value="send" class="up">
+    <br><br>
+    <input type="file" name="profile">
+    <input type="submit" value="upload" class="up">
+</form>
+<br><br>
+    </div>
+{%endblock content%}

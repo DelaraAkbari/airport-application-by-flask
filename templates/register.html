@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+
+{%block title%}
+register page
+{%endblock title%}
+
+{%block style%}
+.register{
+        background-color: black;
+        color:white;
+        text-align: center;
+        margin: auto;
+        padding: revert ;
+        border-radius:10px;
+      }
+
+.page{
+        text-align: center;
+        margin-top: 30px;
+        font-size:20px;
+        border:black solid 5px;
+        padding:20px;
+
+
+}
+
+{%endblock style%}
+
+{%block content%}
+<br>
+<form  class="page" action="/register" method="POST">
+ <input type="text" name="username" placeholder="username" required>
+    <br><br>
+ <input type="password" name="password" placeholder="password" required>
+    <br><br>
+ <input type="password" name="re_password" placeholder="re_password" required>
+   <br><br>
+ <input class="register" type="submit" value="register">
+</form>
+{%endblock content%}
